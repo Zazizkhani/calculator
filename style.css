@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    overflow: hidden;
+}
+
+.main{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 65% 35%;
+    grid-template-rows:5% 35% 60%;
+    grid-template-areas: 
+    "header header"
+    "navigation history"
+    "buttons history";
+}
+
+.header{
+    background-color: rgb(237, 237, 237);
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.mn{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    text-align: center;
+
+}
+.minimize{
+    margin-right: 30px;
+    padding: 5px;
+    padding-bottom: 2px;
+    margin-bottom: 2px;
+}
+
+.maximize{
+    margin-right: 30px;
+    padding: 5px;
+    padding-bottom: 2px;
+    margin-bottom: 2px;
+}
+ 
+.minimize:hover{
+    background-color:  rgb(218, 218, 218);
+}
+
+.maximize:hover{
+    background-color:   rgb(218, 218, 218);
+}
+
+.close{
+    margin-right: 20px;
+    padding: 5px;
+    margin-bottom: 2px;
+}
+
+.close:hover{
+    background-color: rgb(250, 94, 94); 
+}
+
+.navigation{
+    background-color: rgb(237, 237, 237);
+    grid-area: navigation;
+    display: flex;
+    justify-content:space-between;
+    flex-direction: column;
+}
+
+.standard{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.line{
+    margin-left: 5px;
+    margin-right: 25px;
+    padding-right: 3px;
+    padding-left: 3px;
+}
+
+.line:hover{
+    background-color:   rgb(218, 218, 218); 
+}
+
+.stand{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-right: 30px;
+    font-size: medium;
+}
+.photo1{
+    margin-top: 5px;
+}
+
+.photo2{
+    align-self: flex-end;
+    margin-left:700px;
+}
+
+.history{
+    background-color: rgb(237, 237, 237);
+    grid-area: history;
+    text-align: left;
+}
+
+.buttons{
+    grid-area:buttons;
+    display: flex;
+    flex-wrap:wrap;
+    align-items: center;
+    border: 1px solid rgb(221, 224, 224);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    height: 20%;
+    background-color:rgb(228, 231, 231) ;
+    font-size:25px ;
+    text-align:  center; 
+}
+
+.act{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    height: 20%;
+    background-color:rgb(228, 231, 231) ; 
+    font-size: 25px;
+    text-align:  center;
+}
+
+.num{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 20%;
+    background-color:  rgb(246, 248, 244);
+    font-size: 25px;
+    text-align:  center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.num:hover{
+    background-color:  rgb(226, 224, 224);
+}
+
+.act:hover{
+    background-color:   rgb(218, 218, 218);
+}
+
+.btn:hover{
+    background-color:  rgb(218, 218, 218); 
+}
+
+.para2{
+    font-size: 30px;
+    align-self: flex-end;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-right: 5px;
+}
+
+.small{
+    display: flex;
+    flex-direction: row;
+    text-align: start;
+    font-size: smaller;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.sm1,.sm2{
+    color: rgb(128, 128, 128);
+     margin-left: 5px;
+    margin-right: 20px;
+    padding: 10px;
+}
+
+.sm3,.sm4,.sm5{
+    margin-left: 5px;
+    margin-right: 20px;
+    padding: 10px;
+}
+
+.sm3:hover{
+    background-color:   rgb(218, 218, 218); 
+}
+
+.sm4:hover{
+    background-color:   rgb(218, 218, 218);
+}
+
+.sm5:hover{
+    background-color:   rgb(218, 218, 218);
+}
+
+.para3,.para4{
+    font-size: 15px;
+    text-align: left;
+    display: inline-flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.para3{
+    margin-left: 10px;
+    margin-right: 35px;
+    border-bottom: 4px solid rgb(250, 131, 51);
+}
+
+.para5{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.para1{
+    font-size: small;
+    justify-content: flex-start;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 5px;
+}
