@@ -1,5 +1,7 @@
 *{
     margin:0;
+    padding: 0;
+    border: 0;
     overflow: hidden;
 }
 
@@ -8,7 +10,7 @@
     height: 100vh;
     display: grid;
     grid-template-columns: 2fr 320px;
-    grid-template-rows:30px 30px 1fr 0.3fr  350px;
+    grid-template-rows:30px 30px 1fr 0.3fr  400px;
     grid-template-areas: 
     "header header"
     "navigation history"
@@ -26,37 +28,21 @@
 }
 
 .top-right-icon{
-    display:inline-flex ;
-    justify-content:flex-end;
+    display:flex ;
+    justify-content:space-between;
     text-align: center;
+    font-size: 20px;
+    padding: 2px;
+    width: 7%;
+    background-color: #c0c0c000;
 }
 
-.minimize{
-    margin-right: 30px;
-    padding: 5px;
-    padding-bottom: 2px;
-    margin-bottom: 2px;
-}
-
-.maximize{
-    margin-right: 30px;
-    padding: 5px;
-    padding-bottom: 2px;
-    margin-bottom: 2px;
-}
- 
 .minimize:hover{
     background-color:  silver;
 }
 
 .maximize:hover{
     background-color:  silver;
-}
-
-.close{
-    margin-right: 20px;
-    padding: 5px;
-    margin-bottom: 2px;
 }
 
 .close:hover{
@@ -69,10 +55,10 @@
     background-color: #fefefe;
     grid-area: navigation;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
 }
 .meno{
-    margin-top: 5px;
+    margin-left: 5px;
 }
 
 .meno:hover{
@@ -91,8 +77,9 @@
     margin-top: 7px;
 }
 .time-pic{
-    margin-right: 5px;
-    align-self: flex-end;
+    margin-top: 3px;
+    margin-right: 20px;
+    margin-bottom: 5px;
 }
 .result{
     grid-area: result;
@@ -104,6 +91,7 @@
 }
 
 .history{
+    height: 160px;
     background-color:#fefefe;
     grid-area: history;
     text-align: left;
@@ -124,77 +112,66 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.keybord{
+
+.cal-keybord{
     grid-area:keybord;
     height: 100%;
-    display: flex;
-    flex-wrap:wrap;
-    align-items: center;
-    border: 1px solid rgb(221, 224, 224);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 20%);
+    column-gap:1px;
+    row-gap: 1px;
 }
 
-.button{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 20%;
-    height: 20%;
-    background:  #f0f0f0; 
-    font-size:25px ;
-    text-align:  center;
+ .act{
+    background:  #e2e0e0; 
+    font-size:30px ;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .number{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 20%;
-    height: 20%;
-    background-color:  #fafafa;
+    background-color:  #eeecec;
     font-size: 25px;
     text-align:  center;
     font-family: Arial, Helvetica, sans-serif;
 }
+.act:hover{
+    background-color: silver;
+}
 
 .number:hover{
-    background-color:  silver;
+    background-color: silver;
 }
-
-.button:hover{
-    background-color:  silver; 
-}
-
-.option{
+.cal_option{
     grid-area: option;
     display: flex;
-    flex-direction: row;
+    justify-content: flex-start;
     text-align: start;
-    font-size: smaller;
+    font-size: 30px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 30px;
+    width: 30%;
+    margin-top: 20px;
+}
+.cal_option button {
+    margin-left: 15px;
+    margin-right: 20px;
+    margin-bottom: 10px;
 }
 
-.sm1,.sm2{
+.disabled{
     color: rgb(128, 128, 128);
-     margin-left: 5px;
-    margin-right: 20px;
-    padding: 10px;
+}
+.active1:hover{
+    background-color: silver;
+}
+.active2:hover{
+    background-color: silver;
+}
+.active3:hover{
+    background-color: silver;
 }
 
-.sm3,.sm4,.sm5{
-    margin-left: 5px;
-    margin-right: 20px;
-    padding: 10px;
-}
 
-.sm3:hover{
-    background-color:   rgb(218, 218, 218); 
-}
 
-.sm4:hover{
-    background-color:   rgb(218, 218, 218);
-}
 
-.sm5:hover{
-    background-color:   rgb(218, 218, 218);
-}
