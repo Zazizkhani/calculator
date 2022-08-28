@@ -5,19 +5,22 @@
     box-sizing: border-box;
 }
 .body{
-    min-height: 320px;
+    min-height: 420px;
     min-width: 420px;
+    overflow-y: auto;
+    overflow-x: auto;
 }
 
 .main{
     height: 100vh;
     width: 100vw;
-    min-height: 320px;
-    min-width: 420px;
-    overflow: hidden;
+    min-height: 420px;
+    min-width: 320px;
+    overflow-y: auto;
+    overflow-x: auto;
     background-color: #f0ecec;
     display: grid;
-    grid-template-columns: 3fr 320px;
+    grid-template-columns: 2.5fr 320px;
     grid-template-rows:30px 30px 1fr 0.3fr  3fr;
     grid-template-areas: 
     "header header"
@@ -89,9 +92,9 @@
     margin-top: 11px;
 }
 .time-pic{
-    margin-top: 3px;
+     margin-top: 3px; 
     margin-right: 15px;
-    margin-bottom: 5px;
+     margin-bottom: 5px 
 }
 /*................................result.................................*/
 .result{
@@ -99,11 +102,11 @@
     grid-area: result;
     display: flex;
     justify-content: flex-end;
-    font-size: 30px;
+    font-size: 40px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-right:15px;
     margin-left: 5px;
-    margin-top: 10px;
+    margin-top: 60px; 
 }
 /*............................history...................................*/
 
@@ -124,7 +127,7 @@
 }
 .text-of-beneath-history{
     font-size: 15px;
-    margin-top: 35px;
+     margin-top: 35px;
     margin-left: 5px;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -135,18 +138,24 @@
     font-family:Arial, Helvetica, sans-serif;
 }
 .cal_option{
-    margin-top: 10px;
+     margin-top: 20px; 
 }
 
 .cal_option button{
     width: 8%;
-    height: 25px;
+    height: 35px;
     background-color: #c0c0c000;
 }
 .disabled1,.disabled2{
     color: rgb(128, 128, 128);
 }
-.cal_option button:hover{
+.active1:hover{
+    background-color: silver;
+}
+.active3:hover{
+    background-color: silver;
+}
+.active2:hover{
     background-color: silver;
 }
 /*................................keybord..............................*/
@@ -158,6 +167,7 @@
     grid-template-rows: repeat(5, 20%);
     column-gap:2px ;
     row-gap: 2px ;
+    background-color: #dad6d6;
 }
 
  .act{
