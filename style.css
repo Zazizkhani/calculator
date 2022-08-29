@@ -9,10 +9,9 @@
     height: 100vh;
     width: 100vw;
     overflow: hidden;
-    min-width: 320px;
     background-color: #f0ecec;
     display: grid;
-    grid-template-columns: 2.5fr 320px;
+    grid-template-columns: 3fr 1fr;
     grid-template-rows:35px 30px 0.5fr 0.3fr  3fr;
     grid-template-areas: 
     "header header"
@@ -25,6 +24,7 @@
 .header{
     background-color: #f0ecec;
     grid-area: header;
+    min-width: 190px;
     display: flex;
     justify-content: space-between;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -41,8 +41,8 @@
     background-color: #c0c0c000;
 }
 .top-right-icon button{
-    padding: 8px;
-    font-size: 20px;
+    padding: 10px;
+    font-size: 18px;
     text-align: center;
 }
 
@@ -98,7 +98,7 @@
     grid-area: result;
     display: flex;
     justify-content: flex-end;
-    font-size: 40px;
+    font-size: 43px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-right:15px;
     margin-left: 5px;
@@ -110,6 +110,7 @@
     background-color:#f0ecec;
     grid-area: history;
     text-align: left;
+    min-width: 190px;
 }
 .history span{
     font-size: 18px;
@@ -117,7 +118,7 @@
     margin-left: 5px;
 }
 .history-text{
-    border-bottom: 4px inset rgb(228,137,0);
+    border-bottom: 2px inset rgb(228,137,0);
     padding-bottom: 1.5px;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -138,8 +139,8 @@
 }
 
 .cal_option button{
-    width: 8%;
-    height: 35px;
+    width: 7%;
+    height: 40px;
     background-color: #c0c0c000;
 }
 .disabled1,.disabled2{
@@ -157,7 +158,8 @@
 /*................................keybord..............................*/
 .cal-keybord{
     grid-area:keybord;
-    height: 100%;
+    height: 420px;
+    min-width: 280px;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5, 20%);
@@ -168,13 +170,13 @@
 
  .act{
     background:  #e2e0e0; 
-    font-size:23px ;
+    font-size:26px ;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .number{
     background-color:  #eeecec;
-    font-size: 25px;
+    font-size: 23px;
     text-align:  center;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -182,7 +184,7 @@
     background-color: silver;
 }
 #equal:hover{
-    background-color: rgb(204, 247, 179);
+    background-color: rgb(220, 253, 200);
 }
 
 .number:hover{
