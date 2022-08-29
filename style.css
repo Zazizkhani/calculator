@@ -4,24 +4,16 @@
     border: 0;
     box-sizing: border-box;
 }
-.body{
-    min-height: 420px;
-    min-width: 420px;
-    overflow-y: auto;
-    overflow-x: auto;
-}
 
 .main{
     height: 100vh;
     width: 100vw;
-    min-height: 420px;
+    overflow: hidden;
     min-width: 320px;
-    overflow-y: auto;
-    overflow-x: auto;
     background-color: #f0ecec;
     display: grid;
     grid-template-columns: 2.5fr 320px;
-    grid-template-rows:30px 30px 1fr 0.3fr  3fr;
+    grid-template-rows:35px 30px 0.5fr 0.3fr  3fr;
     grid-template-areas: 
     "header header"
     "navigation history"
@@ -36,6 +28,10 @@
     display: flex;
     justify-content: space-between;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.page-name{
+    margin-left: 5px;
+    margin-top: 7px;
 }
 
 .top-right-icon{
@@ -116,7 +112,7 @@
     text-align: left;
 }
 .history span{
-    font-size: 20px;
+    font-size: 18px;
     margin-right: 20px;
     margin-left: 5px;
 }
@@ -149,13 +145,13 @@
 .disabled1,.disabled2{
     color: rgb(128, 128, 128);
 }
-.active1:hover{
+.M-plus:hover{
     background-color: silver;
 }
-.active3:hover{
+#minus:hover{
     background-color: silver;
 }
-.active2:hover{
+.M-save:hover{
     background-color: silver;
 }
 /*................................keybord..............................*/
@@ -184,6 +180,9 @@
 }
 .act:hover{
     background-color: silver;
+}
+#equal:hover{
+    background-color: rgb(204, 247, 179);
 }
 
 .number:hover{
